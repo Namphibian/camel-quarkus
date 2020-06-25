@@ -31,6 +31,9 @@
 
     <properties>
         <firstVersion>1.0.0-M4</firstVersion>
+
+        <!-- Workaround for https://github.com/quarkusio/quarkus/issues/10280 -->
+        <skipExtensionValidation>true</skipExtensionValidation>
     </properties>
 
     <repositories>
