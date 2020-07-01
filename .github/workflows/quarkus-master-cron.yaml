@@ -67,7 +67,7 @@ jobs:
           version: '11'
       - name: Build Quarkus
         run: |
-          git clone --depth 1 --branch master https://github.com/quarkusio/quarkus.git \
+          git clone --depth 1 --branch 1.6 https://github.com/quarkusio/quarkus.git \
             && cd quarkus \
             && echo "Current Quarkus commit:" $(git rev-parse HEAD) \
             && ./mvnw -B -ntp clean install -DskipTests -DskipITs -Denforcer.skip -Dquarkus.build.skip -DskipDocs
